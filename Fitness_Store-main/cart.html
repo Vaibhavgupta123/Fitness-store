@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - The Fitness Store </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- header -->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images\logo.webp" width="75px">
+                     </a>
+                    <p>The Fitness Store</p>
+                 </div>
+                 <nav>
+                     <ul id="menuitems">
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="products.html">Products</a></li>
+                         <li><a href="account.html">Account</a></li>
+                         <li><a href="About.html">About</a></li>
+                     </ul>
+                 </nav>
+                 <a href="cart.html">
+                     <img src="images\16.png" width="30px" height="30px">
+                 </a>
+                <img src="images\menu.png" class="menu" onclick="menutoggle()">
+            </div>
+        </div>
+
+        <div class="smallcontainer cart">
+
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cartinfo">
+                            <img src="images/pp1.webp" alt="">
+                            <div>
+                                <p>Nike Downshifter 11 Running Shoes</p>
+                                <small>Rs 3999</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs 3999</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cartinfo">
+                            <img src="images/pp4.webp" alt="">
+                            <div>
+                                <p>Reebok Men Superfit Track Top</p>
+                                <small>Rs 1299</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs 1299</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="cartinfo">
+                            <img src="images/pp5.webp" alt="">
+                            <div>
+                                <p>Puma Black Colour T-Shirt</p>
+                                <small>Rs 1299</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs 1299</td>
+                </tr>
+            </table>
+
+            <div class="totalprice">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>Rs 6597</td>
+                    </tr>
+
+                    <tr>
+                        <td>Shipping Charge</td>
+                        <td>Rs 200</td>
+                    </tr>
+
+                    <tr>
+                        <td>Total</td>
+                        <td>Rs 6797</td>
+                    </tr>  
+                </table>
+            </div>   
+        </div>
+       
+
+        
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and Ios mobile phone.</p>
+                    <div class="applogo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer2">
+                    <img src="images/logo.webp" >
+                    <p>Our Purpose is to Sustainbly make the Pleasure and Benefits of Sports Accesible to the Many.</p>
+                </div>
+
+                <div class="footer3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - The Fitness Store</p>
+        </div>
+    </div>
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight = "200px";
+            }
+            else
+            {
+                menuitems.style.maxHeight = "0px";
+            }
+        } 
+    </script>
+</body>
+</html>

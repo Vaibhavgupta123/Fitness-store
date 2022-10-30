@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - The Fitness Store </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- header -->
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images\logo.webp" width="75px">
+                     </a>
+                    <p>The Fitness Store</p>
+                 </div>
+                 <nav>
+                     <ul id="menuitems">
+                         <li><a href="index.html">Home</a></li>
+                         <li><a href="products.html">Products</a></li>
+                         <li><a href="account.html">Account</a></li>
+                         <li><a href="About.html">About</a></li>
+                     </ul>
+                 </nav>
+                 <a href="cart.html">
+                     <img src="images\16.png" width="30px" height="30px">
+                 </a>
+                <img src="images\menu.png" class="menu" onclick="menutoggle()">
+            </div>
+        </div>
+<div class="section1">
+		<div class="containers">
+			<div class="contentsection">
+				<div class="title">
+					<h1>The Fitness Store</h1>
+				</div>
+				<div class="content">
+					<h3>Let’s get going to dig out the best products in your game & make ‘em available right at your doorstep. We will be glad to serve you in any city in India & speedily, so that you enjoy your product in the coming weekend! All this, with no shipping charges if you purchase above Rs 1000.<br>
+
+                        Scout through your favourite brands with latest technologies. Just click & be its proud owner, at the best available price in the market. Come, help us help you to fly high with your new & improved game with high quality sportsgear!</p>
+					<div class="button">
+						<a href="">Read More</a>
+					</div>
+				</div>
+				<div class="social">
+                    <a href="#" class="i fa fa-facebook"></a>
+                    <a href="#" class="i fa fa-twitter"></a>
+                    <a href="#" class="i fa fa-instagram"></a>
+				</div>
+			</div>
+			<div class="imgsection">
+				<img src="images/cr77.png">
+			</div>
+		</div>
+	</div>
+
+        
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer1">
+                    <h3>Downlod Our App</h3>
+                    <p>Downlod App for Android and Ios mobile phone.</p>
+                    <div class="applogo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+
+                <div class="footer2">
+                    <img src="images/logo.webp" >
+                    <p>Our Purpose is to Sustainbly make the Pleasure and Benefits of Sports Accesible to the Many.</p>
+                </div>
+
+                <div class="footer3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+
+                <div class="footer4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - The Fitness Store</p>
+        </div>
+    </div>
+
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuitems.style.maxHeight == "0px")
+            {
+                menuitems.style.maxHeight = "200px";
+            }
+            else
+            {
+                menuitems.style.maxHeight = "0px";
+            }
+        } 
+    </script>
+</body>
+</html>
